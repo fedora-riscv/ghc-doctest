@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.13.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Test interactive Haskell examples
 
 License:        MIT
@@ -98,6 +98,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.13.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Wed Apr 18 2018 Elliott Sales de Andrade <quantum.analyst@gmail.com> - 0.13.0-2
 - Enable tests
 
