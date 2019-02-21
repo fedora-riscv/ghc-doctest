@@ -7,8 +7,8 @@
 %bcond_without tests
 
 Name:           ghc-%{pkg_name}
-Version:        0.13.0
-Release:        6%{?dist}
+Version:        0.16.0.1
+Release:        1%{?dist}
 Summary:        Test interactive Haskell examples
 
 License:        MIT
@@ -101,11 +101,14 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %files devel -f %{name}-devel.files
-%doc example
+%doc CHANGES README.markdown example
 %{_bindir}/%{pkg_name}
 
 
 %changelog
+* Thu Feb 21 2019 Jens Petersen <petersen@redhat.com> - 0.16.0.1-1
+- update to 0.16.0.1
+
 * Sun Feb 17 2019 Jens Petersen <petersen@redhat.com> - 0.13.0-6
 - refresh to cabal-rpm-0.13
 
