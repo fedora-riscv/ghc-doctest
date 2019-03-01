@@ -4,7 +4,7 @@
 %global pkg_name doctest
 %global pkgver %{pkg_name}-%{version}
 
-%bcond_without tests
+%bcond_with tests
 
 Name:           ghc-%{pkg_name}
 Version:        0.16.0.1
@@ -108,6 +108,7 @@ This package provides the Haskell %{pkg_name} library development files.
 %changelog
 * Thu Feb 21 2019 Jens Petersen <petersen@redhat.com> - 0.16.0.1-1
 - update to 0.16.0.1
+- disable testsuite (needs cabal-install)
 
 * Sun Feb 17 2019 Jens Petersen <petersen@redhat.com> - 0.13.0-6
 - refresh to cabal-rpm-0.13
