@@ -7,7 +7,7 @@
 %bcond_with tests
 
 Name:           ghc-%{pkg_name}
-Version:        0.16.2
+Version:        0.16.3
 Release:        1%{?dist}
 Summary:        Test interactive Haskell examples
 
@@ -35,6 +35,7 @@ BuildRequires:  ghc-transformers-prof
 BuildRequires:  ghc-HUnit-devel
 BuildRequires:  ghc-QuickCheck-devel
 BuildRequires:  ghc-hspec-devel
+BuildRequires:  ghc-hspec-core-devel
 BuildRequires:  ghc-mockery-devel
 BuildRequires:  ghc-setenv-devel
 BuildRequires:  ghc-silently-devel
@@ -98,7 +99,6 @@ This package provides the Haskell %{pkg_name} profiling library.
 %install
 # Begin cabal-rpm install
 %ghc_lib_install
-chmod a-x CHANGES README.markdown
 # End cabal-rpm install
 
 
@@ -139,6 +139,9 @@ chmod a-x CHANGES README.markdown
 
 
 %changelog
+* Sun Jun 07 2020 Jens Petersen <petersen@redhat.com> - 0.16.3-1
+- update to 0.16.3
+
 * Fri Feb 14 2020 Jens Petersen <petersen@redhat.com> - 0.16.2-1
 - update to 0.16.2
 
