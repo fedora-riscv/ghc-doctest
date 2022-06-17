@@ -8,7 +8,7 @@
 
 Name:           ghc-%{pkg_name}
 Version:        0.17
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Test interactive Haskell examples
 
 License:        MIT
@@ -132,6 +132,9 @@ This package provides the Haskell %{pkg_name} profiling library.
 
 
 %changelog
+* Fri Jun 17 2022 Jens Petersen <petersen@redhat.com> - 0.17-4
+- rebuild
+
 * Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 0.17-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
