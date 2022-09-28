@@ -4,11 +4,11 @@
 %global pkg_name doctest
 %global pkgver %{pkg_name}-%{version}
 
-%bcond_without tests
+%bcond_with tests
 
 Name:           ghc-%{pkg_name}
 Version:        0.13.0
-Release:        4%{?dist}
+Release:        4.1%{?dist}
 Summary:        Test interactive Haskell examples
 
 License:        MIT
@@ -98,6 +98,9 @@ This package provides the Haskell %{pkg_name} library development files.
 
 
 %changelog
+* Wed Sep 28 2022 Jens Petersen <petersen@redhat.com> - 0.13.0-4.1
+- disable the testsuite
+
 * Sat Jul 28 2018 Jens Petersen <petersen@redhat.com> - 0.13.0-4
 - rebuild
 
