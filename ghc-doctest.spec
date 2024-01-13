@@ -4,11 +4,13 @@
 %global pkg_name doctest
 %global pkgver %{pkg_name}-%{version}
 
+%ifnarch riscv64
 %bcond_without tests
+%endif
 
 Name:           ghc-%{pkg_name}
 Version:        0.20.1
-Release:        %autorelease
+Release:        %autorelease -e 0.rv64
 Summary:        Test interactive Haskell examples
 
 License:        MIT
